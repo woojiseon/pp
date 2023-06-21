@@ -1,0 +1,157 @@
+@import url(common.css);
+
+.webdesign{
+  width: 100%;
+  height: 100vh;
+}
+
+.item_list{ 
+	width: 1400px;
+	margin: auto;  
+	box-sizing:border-box;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 40px;
+}
+.item_list li{
+	width: 440px;
+	height: 340px;
+  position: relative;
+	border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.item_list li a{
+	font-size:30px;
+	font-weight:bold;
+	color:#fff;
+}
+
+
+
+.item_list li img{
+	width: 100%;
+	height: 100%;
+
+}
+.item_list li img{
+
+}
+
+.item_list li::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  transition: 0.3s;
+}
+
+.item_list li:hover::before{
+  box-shadow: 0 0 20px crimson inset;
+}
+
+
+/* POPUP BOX ---------------------*/
+
+#popup{ /*검정배경*/
+	display:none; 
+	position:fixed; 
+	left:0; 
+	top:0;
+	width:100%; 
+	height:100%; 
+	background:rgba(0,0,0,0.7); 
+	z-index: 9999;
+	overflow-y:scroll; 
+}
+
+.pop_body{   /*팝업내용박스*/
+	position:relative;
+	height:100vh;	
+	margin:0 auto;
+	width:1000px;
+	z-index: 99999;
+}
+.pop>li{
+	width:1000px;
+	position:absolute;
+	text-align:center;
+	background:#fff;
+	display:none;
+}
+
+
+.pop>li img{
+  width: 100%;
+}
+
+
+/*버튼영역*/ 
+.m_btn{
+	position:fixed;
+	left:50%;
+	top:0px;
+	margin-left:492px;
+	width:80px;
+	height:150px;
+	color:#fff;
+	text-align:center;
+	overflow:hidden;
+	z-index:10000;
+}
+.m_btn>li{
+	cursor:pointer;
+	overflow:hidden;
+	background:#be3455;
+}
+.m_btn>li:hover{background:#de7575;}
+
+/*닫기버튼*/
+.m_btn .btn_close{
+	height:70px;
+	width:80px;
+	cursor:pointer;
+	border-bottom:1px solid #ecc2c2;
+}
+.m_btn .btn_close i{  /*아이콘폰트*/
+	position:relative;
+	top:15px;
+	font-size:40px;
+}
+
+/*다음이전 버튼*/
+
+.m_btn .left_btn, .m_btn .right_btn{float:left;}
+.m_btn .left_btn i,.m_btn .right_btn i{ 
+	position:relative;
+	top:10px;
+	font-size:30px;	
+	width:40px;
+	height:50px;	
+}
+.m_btn .g_page{  /*Page번호*/
+	font-size:12px;
+	color:#fff;
+	width:80px;
+	padding-top:10px;
+	height:50px;
+	text-align:center;
+}
+
+/* ___________________________ */
+
+.tabContents div{display: none;}
+.tabContents div.active{display: block;}
+
+/* 내용______________________ */
+
+
+
+
+
+
+
+
+

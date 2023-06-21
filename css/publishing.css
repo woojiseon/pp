@@ -1,0 +1,116 @@
+
+
+.btns{
+  text-align: center;
+  position: absolute;
+  bottom: -10%;
+  right: 0;
+
+}
+
+
+.btn{
+  font-size: 18px;
+  width: 150px;
+  padding: 7px;
+  background-color: #fff;
+  outline: none;
+  border-radius: 5px;
+  transition: 0.35s;
+
+}
+
+.tablet:hover {
+  background-color: green;
+  color: #fff;
+  border-color: transparent;
+
+}
+
+.tablat{   /*태블릿이미지 배경*/
+	width: 900px; 
+	height: 800px; 
+	background:url(../image/tabl.png) no-repeat; 
+  margin-top: 120px;
+}
+
+
+.tablat iframe{
+  margin-top:50px;
+
+}
+
+/* ---------------- */
+
+#webpublishing{
+  width: 1400px;
+  height: 100vh;
+  margin: auto;
+  padding: 30px;
+}
+
+h3{
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+#publishing_box{
+  width: 1400px;
+  height: 80vh;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  background-color: cadetblue;
+  border-radius: 5px;
+  box-shadow: 0 5px 5px #222;
+  position: relative;
+}
+
+.publishing_txt{
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #fff;
+}
+
+h4{
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.txt-top > div{
+  background-color: brown;
+  padding: 6px;
+  border-radius: 10px;
+  width: 200px;
+  font-size: 12px;
+  text-align: center;
+}
+
+
+.publishing_txt > p {
+  font-size: 14px;
+}
+
+.txt-bottm p:first-child{
+  color: midnightblue;
+}
+
+.txt-bottm p{
+  margin: 30px 0;
+
+}
+
+.txt-bottm p span{
+  background-color: brown;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  margin-right: 10px;
+}
+
+
+
+

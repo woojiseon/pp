@@ -1,0 +1,236 @@
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+/* font-family: fontawesome; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a, a:link , a:visited{
+    text-decoration: none;
+    color: inherit;
+}
+
+li{
+    list-style: none;
+}
+
+@keyframes entire {
+    from{
+        background-color: cornflowerblue;
+    }
+    to{
+        transform: scale(2000);
+        opacity: 1;
+    }
+}
+
+.back_color{
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    background-color: antiquewhite;
+    border-radius: 10px 20px 30px 20px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    
+    animation: entire 1.5s forwards;
+    animation-delay: 3s;
+    z-index: -9999;
+}
+
+.intro{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkslateblue;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+
+
+
+
+@keyframes show {
+    from{
+        opacity: 0;
+    }
+    20%{
+        transform: rotate(55deg) scale(1);
+        opacity: 1;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes color{
+    from{
+        opacity: 0;
+
+    }
+    50%{
+        transform: scale(1.1);
+        
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+.flower i.fa-heart{
+    opacity: 0;
+    animation: show 1.3s;
+    animation-fill-mode: forwards;
+    z-index: 9999;
+}
+
+
+.yell i.fa-heart{
+    animation-delay: 1s;
+}
+
+.orang i.fa-heart{
+    animation-delay: 1.7s;
+}
+
+.blu i.fa-heart{
+    animation-delay: 2s;
+}
+
+.whit i.fa-heart{
+    animation-delay: 2.3s;
+}
+
+
+
+/* --------------------------------- */
+
+
+
+.flower{  /* 하트간 간격 */
+    width: 175px;
+    height: 175px;
+    top: 10%;
+    left: 30%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    transform: rotate(55deg);
+}
+
+.fa-heart,
+.fa-heart-o{
+    font-size: 100px;
+}
+
+i.fa-heart-o{
+    color: #333;
+    opacity: 0;
+
+    animation: color 1s forwards;
+    animation-delay: 3.5s;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.yell{
+    color: #f9f335;
+    transform: rotate(-135deg);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+}
+
+.orang{
+    color: #f96806;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.blu{
+    color: #3D88FC;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.whit{
+    color: #fff;
+    transform: rotate(135deg);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+
+@keyframes line {
+    from{
+        opacity: 0;
+    }
+    /* 40%{
+        transform: translate(-25px,-8px) rotate(1deg);
+    }
+    60%{
+        transform: translate(-28px,-8px) rotate(0);
+    }
+    90%{
+        transform: translate(-25px,-8px) rotate(1deg);
+    } */
+    to{
+        opacity: 1;
+    }
+}
+
+
+.line img{
+    width: 200px;
+    transform: translate(-28px,-8px);
+    opacity: 0;
+    animation: line 3s forwards;
+    animation-delay: 3.5s;
+}
+
+
+
+/* 텍스트 */
+
+@keyframes txt {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+        right: 0;
+    }
+}
+
+h1{
+    font-size: 60px;
+    opacity: 0;
+    animation: txt 2s forwards ease-in-out;
+    animation-delay: 3.5s;
+    position: relative;
+    right: -50px;
+    
+}
+
+
+
+
+
+
+
+
+
+

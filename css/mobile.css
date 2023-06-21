@@ -1,0 +1,41 @@
+
+.mobile_section{
+  background-color: darkseagreen;
+}
+
+
+#mobile{
+  width: 1600px;
+  margin: auto;
+
+}
+
+#mobile .mobile_items{
+  display: flex;
+  justify-content: space-between;
+}
+
+#mobile .img_items{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+#mobile img{  
+  width: 200px;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
